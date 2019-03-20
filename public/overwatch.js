@@ -11,16 +11,16 @@ const playerFace= document.getElementById('playerFace');
 
 
 
-function fetchSpace(e) { //Declaring a function called fetchSpace, which takes in an argument of (e) - or event
+function fetchSpace(e) { 
     let url = `${baseURL}${platform.value}/${region.value}/${bTag.value}/profile`
     
     fetch(url)
-    .then(results => { //Promise resolver. This is grabbing the results we are getting back from our fetch request. 
-        return results.json() //Returns the results we receieve from our fetch jsonified (JSON = JavaScript object notation). Also gives us another promise.
+    .then(results => { 
+        return results.json()
     })
-    .then( json => { //Promise resolver. Grabbing the jsonfied data from our promise.
+    .then( json => { 
         console.log(json);
-        displayStats(json) //This drops our jsonified data into our displayRockets function. 
+        displayStats(json) 
     })
 } 
 
@@ -38,12 +38,7 @@ function displayStats(data){
     }
     console.log(data);
     let stats = data;
-    /*while (statHead.firstChild && statBody.firstChild) {              //this will remove the intial ten results after we make another search
-        statHead.removeChild(statHead.firstChild);
-        statBody.removeChild(statBody.firstChild);
-    }*/
-    //console.log(data)
-    //for (let s in stats) {
+  
         let name = document.querySelector('.h3')
         let level = document.createElement('li');
         let prestige = document.createElement('li')
@@ -73,9 +68,5 @@ function displayStats(data){
         ratingIcon.src = data.ratingIcon
         playerFace.src = data.icon
         
-    
-    
-    
-    //s}
 }
    
