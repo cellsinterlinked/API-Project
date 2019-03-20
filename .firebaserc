@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "overwatch-api-project"
+    "api": "sb-overwatch-api"
   }
 }
