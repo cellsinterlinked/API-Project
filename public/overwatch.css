@@ -18,7 +18,7 @@
 
 
 .body {
-    background: url("/assets/overwatch_by_hallr_von_nebelheim_da5bayi-fullview.jpg");
+    background: url("./assets/image.jpg");
 }
 
 .platform {
@@ -98,8 +98,8 @@
     src: local('BigNoodleTitling'), url('big_noodle_titling.woff') format('woff');
     font-size: 200%;
 }
-#playerIcon {
+/* #playerIcon {
     
 
-}
+} */
 
